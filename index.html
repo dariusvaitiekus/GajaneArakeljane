@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kā miega trūkums ietekmē pusaudžu veselību</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+html { scroll-behavior:smooth; }
+
+body{
+margin:0;
+font-family:'Inter', sans-serif;
+background:linear-gradient(145deg,#0c1220,#111827,#1a2236);
+color:#e6edf5;
+line-height:1.9;
+}
+
+header{
+padding:160px 20px;
+text-align:center;
+background:linear-gradient(145deg,#111827,#1c2538);
+border-bottom:1px solid rgba(255,255,255,0.08);
+box-shadow:0 0 40px rgba(96,165,250,0.08);
+}
+
+header h1{
+font-family:'Playfair Display', serif;
+font-size:46px;
+margin:0;
+letter-spacing:1px;
+}
+
+header p{
+margin-top:18px;
+color:#8fb7ff;
+font-weight:300;
+}
+
+nav{
+position:sticky;
+top:0;
+background:#111827;
+padding:18px;
+text-align:center;
+border-bottom:1px solid rgba(255,255,255,0.08);
+z-index:1000;
+}
+
+nav a{
+color:#9aa7c2;
+margin:0 18px;
+text-decoration:none;
+font-weight:400;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ffffff;
+}
+
+nav a.active{
+color:#60a5fa;
+}
+
+.container{
+max-width:1000px;
+margin:120px auto;
+padding:0 30px;
+}
+
+section{
+margin-bottom:140px;
+padding:70px;
+background:rgba(255,255,255,0.03);
+border:1px solid rgba(255,255,255,0.08);
+border-radius:28px;
+box-shadow:0 0 30px rgba(96,165,250,0.05);
+scroll-margin-top:120px;
+}
+
+h2{
+font-family:'Playfair Display', serif;
+font-size:30px;
+margin-bottom:30px;
+color:#60a5fa;
+}
+
+.chart{
+width:260px;
+margin:60px auto;
+}
+
+footer{
+text-align:center;
+padding:80px 20px;
+color:#7c8aa6;
+border-top:1px solid rgba(255,255,255,0.08);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Kā miega trūkums ietekmē pusaudžu veselību</h1>
+<p>Gajane Arakeljane</p>
+</header>
+
+<nav>
+<a href="#ievads">Ievads</a>
+<a href="#miegs">Kas ir miegs</a>
+<a href="#simptomi">Miega trūkuma simptomi</a>
+<a href="#risinajumi">Risinājumi</a>
+<a href="#praktiska">Praktiskā daļa</a>
+<a href="#secinajumi">Secinājumi</a>
+</nav>
+
+<div class="container">
+
+<section id="ievads">
+<h2>Ievads</h2>
+
+<p>
+Miegs ir viens no svarīgākajiem faktoriem, kas ietekmē cilvēka fizisko un psiholoģisko veselību.
+Īpaši nozīmīgs tas ir pusaudžu vecumā, kad notiek intensīva organisma attīstība,
+hormonālās sistēmas pārmaiņas un centrālās nervu sistēmas nobriešana.
+</p>
+
+<p>
+Nepietiekams miega daudzums var izraisīt nogurumu, koncentrēšanās grūtības,
+emocionālu nestabilitāti un samazinātu motivāciju.
+Ilgtermiņā miega trūkums var negatīvi ietekmēt mācību sasniegumus,
+sociālās attiecības un vispārējo dzīves kvalitāti.
+</p>
+
+<p>
+Mūsdienās miega trūkums pusaudžu vidū kļūst arvien izplatītāks.
+Palielināta skolas slodze, ārpusskolas aktivitātes,
+kā arī ilgstoša digitālo ierīču lietošana vakarā
+būtiski samazina miega ilgumu un kvalitāti.
+</p>
+
+<p>
+Darba mērķis ir analizēt miega trūkuma ietekmi uz pusaudžu veselību
+un izstrādāt ieteikumus miega kvalitātes uzlabošanai.
+</p>
+
+</section>
+<section id="miegs">
+<h2>1. Kas ir miegs</h2>
+
+<p>
+Miegs ir dabisks fizioloģisks stāvoklis, kas nepieciešams organisma normālai darbībai.
+Tā laikā samazinās apzinātā aktivitāte, bet vienlaikus smadzenēs un ķermenī
+notiek svarīgi atjaunošanās procesi.
+</p>
+
+<p>
+Miega laikā tiek stabilizēta nervu sistēma,
+regulēta hormonālā darbība un stiprināta imūnsistēma.
+Zinātniskie pētījumi pierāda, ka miegs ir aktīvs bioloģisks process,
+kura laikā smadzenes apstrādā dienas laikā iegūto informāciju
+un nostiprina atmiņu.
+</p>
+
+<p>
+Miegs sastāv no NREM un REM fāzēm.
+NREM miega laikā notiek fiziskā organisma atjaunošanās —
+samazinās sirdsdarbība un elpošanas biežums,
+savukārt REM miegs ir saistīts ar sapņošanu
+un emocionālās informācijas apstrādi.
+</p>
+
+<p>
+Regulāra šo fāžu maiņa ir būtiska pilnvērtīgai atpūtai.
+Ja miegs ir nepietiekams vai traucēts,
+tiek ietekmētas koncentrēšanās spējas,
+reakcijas ātrums un lēmumu pieņemšana.
+</p>
+
+</section>
+
+<section id="simptomi">
+<h2>2. Miega trūkuma simptomi</h2>
+
+<p>
+Miega trūkums rodas situācijās,
+kad cilvēks ilgstoši nesaņem organismam nepieciešamo miega daudzumu
+vai miega kvalitāte ir nepietiekama.
+</p>
+
+<p>
+Viens no biežākajiem simptomiem ir pastāvīgs nogurums
+un izteikta miegainība dienas laikā.
+Tas var negatīvi ietekmēt mācību procesu,
+samazināt uzmanības noturību
+un palielināt kļūdu iespējamību.
+</p>
+
+<p>
+Psiholoģiskā līmenī miega trūkums var izraisīt
+aizkaitināmību, emocionālu nestabilitāti
+un paaugstinātu trauksmes līmeni.
+Ilgstoši miega traucējumi var būt saistīti
+ar depresijas simptomu attīstību.
+</p>
+
+<p>
+No medicīniskā viedokļa hronisks miega trūkums
+palielina sirds un asinsvadu slimību,
+aptaukošanās un cukura diabēta risku.
+Organisms nespēj pilnvērtīgi atjaunoties,
+kas ilgtermiņā var ietekmēt vispārējo veselību.
+</p>
+
+</section>
+<section id="risinajumi">
+<h2>3. Risinājumi miega uzlabošanai</h2>
+
+<p>
+Miega kvalitātes uzlabošanai būtiska nozīme ir miega higiēnai.
+Tas ietver regulāru gulētiešanas un pamošanās laiku,
+mierīgas un tumšas vides nodrošināšanu
+un stimulējošu vielu ierobežošanu vakarā.
+</p>
+
+<p>
+Īpaša uzmanība jāpievērš digitālo ierīču lietošanai pirms miega.
+Viedtālruņu un datoru izstarotā zilā gaisma kavē melatonīna izdalīšanos,
+apgrūtinot iemigšanu un pasliktinot miega kvalitāti.
+Tādēļ ieteicams nelietot ierīces vismaz vienu stundu pirms gulētiešanas.
+</p>
+
+<p>
+Regulāras fiziskās aktivitātes dienas laikā
+uzlabo miega struktūru un samazina stresa līmeni.
+Tomēr intensīvas slodzes vēlās vakara stundās nav ieteicamas,
+jo tās var stimulēt nervu sistēmu.
+</p>
+
+<p>
+Sabalansēts uzturs un pietiekama atpūta
+ir nozīmīgi faktori veselīga miega nodrošināšanai.
+Ievērojot šos principus,
+ir iespējams būtiski uzlabot pusaudžu miega kvalitāti.
+</p>
+
+</section>
+
+<section id="praktiska">
+<h2>Praktiskā daļa</h2>
+
+<p>
+Praktiskajā daļā tika veikta aptauja pusaudžiem vecumā no 14 līdz 18 gadiem.
+Tika analizēts miega ilgums, iemigšanas laiks,
+pašsajūta dienas laikā un elektronisko ierīču lietošanas paradumi.
+</p>
+
+<p>
+Rezultāti liecina, ka ievērojama daļa respondentu
+guļ mazāk par ieteicamo miega ilgumu
+un bieži izjūt nogurumu vai koncentrēšanās grūtības.
+</p>
+
+<p>
+Tika novērota saistība starp vēlu gulētiešanu,
+ilgstošu ekrānlaiku un sliktāku pašsajūtu nākamajā dienā.
+Tas apstiprina teorētiskajā daļā minētos secinājumus.
+</p>
+
+<div class="chart"><canvas id="c1"></canvas></div>
+<div class="chart"><canvas id="c2"></canvas></div>
+<div class="chart"><canvas id="c3"></canvas></div>
+<div class="chart"><canvas id="c4"></canvas></div>
+<div class="chart"><canvas id="c5"></canvas></div>
+<div class="chart"><canvas id="c6"></canvas></div>
+<div class="chart"><canvas id="c7"></canvas></div>
+
+</section>
+
+<section id="secinajumi">
+<h2>Secinājumi</h2>
+
+<p>
+Pētījuma rezultāti apstiprina,
+ka miega trūkums būtiski ietekmē pusaudžu veselību
+un mācību sasniegumus.
+Nepietiekams miegs samazina koncentrēšanās spējas
+un ietekmē emocionālo stabilitāti.
+</p>
+
+<p>
+Hipotēze par skolas slodzes un sociālo tīklu ietekmi
+uz miega kvalitāti tika apstiprināta.
+Pusaudži ar lielāku ekrānlaiku biežāk saskaras
+ar miega traucējumiem.
+</p>
+
+<p>
+Lai uzlabotu situāciju,
+nepieciešams veicināt izpratni par miega nozīmi
+un ieviest miega higiēnas principus ikdienā.
+Savlaicīga problēmas apzināšanās
+var būtiski uzlabot jauniešu dzīves kvalitāti.
+</p>
+
+</section>
+
+</div>
+
+<footer>
+© 2025 Gajane Arakeljane
+</footer>
+
+<script>
+new Chart(document.getElementById("c1"),{type:'pie',data:{labels:['5-6h','6-7h','7-8h'],datasets:[{data:[14,53,25]}]}}); 
+new Chart(document.getElementById("c2"),{type:'pie',data:{labels:['22-23','00:00'],datasets:[{data:[44,33]}]}}); 
+new Chart(document.getElementById("c3"),{type:'pie',data:{labels:['Nogurums','Koncentrēšanās'],datasets:[{data:[42,44]}]}}); 
+new Chart(document.getElementById("c4"),{type:'pie',data:{labels:['Galvassāpes','Aizkaitināmība'],datasets:[{data:[39,47]}]}}); 
+new Chart(document.getElementById("c5"),{type:'pie',data:{labels:['Katru dienu','3-4x','1-2x','Reti'],datasets:[{data:[22,25,28,17]}]}}); 
+new Chart(document.getElementById("c6"),{type:'pie',data:{labels:['Regulāri','Dažreiz','Nē'],datasets:[{data:[36,31,33]}]}}); 
+new Chart(document.getElementById("c7"),{type:'pie',data:{labels:['<30min','30-50min','1-2h','>2h'],datasets:[{data:[42,25,11,22]}]}}); 
+
+const navLinks=document.querySelectorAll("nav a");
+window.addEventListener("scroll",()=>{
+let fromTop=window.scrollY+150;
+navLinks.forEach(link=>{
+let section=document.querySelector(link.hash);
+if(section && section.offsetTop<=fromTop && section.offsetTop+section.offsetHeight>fromTop){
+link.classList.add("active");
+}else{
+link.classList.remove("active");
+}
+});
+});
+</script>
+
+</body>
+</html>
